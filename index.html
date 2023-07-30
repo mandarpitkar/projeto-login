@@ -20,13 +20,15 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <fieldset id="log">
                         <div class="campo">
-                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" required>
-                            <label for="iemail">Email</label>
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                            <label for="iemail">Login</label>
                     </div class="campo">
                     </fieldset>
                     <fieldset id="log">
                         <div class="campo">
-                            <input type="password" name="sen" id="isen" placeholder="sua senha" min="8" max="20" required>
+                            <span class="material-symbols-outlined">vpn_key</span>
+                            <input type="password" name="sen" id="isen" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="30">
                             <label for="isen">Senha</label>
                         </div class="campo">
                            
@@ -37,7 +39,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <p><a id=log href="#">Esqueci a senha</a></p>
+                        <p><a href="esqueci.html">Esqueci a senha <i class="material-symbols-outlined">mail</i> </a></p>
                     </fieldset>
                                           
                    
